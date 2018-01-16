@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Стелла Аббасова](https://up.htmlacademy.ru/adaptive/13/user/248693).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
