@@ -1,6 +1,6 @@
 .catalog {
-  padding-top: 30px;
   @include padding-content;
+  padding-top: 30px;
 }
 
 .catalog__list {
@@ -29,7 +29,7 @@
   margin: 0;
   padding-top: 20px;
   padding-bottom: 10px;
-  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -57,7 +57,7 @@
 }
 
 .catalog__price {
-  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;

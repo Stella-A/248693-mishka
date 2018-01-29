@@ -9,5 +9,6 @@
   flex-wrap: wrap;
   align-content: center;
   min-height: 80px;
+
   @include list-reset;
 }

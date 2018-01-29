@@ -1,5 +1,6 @@
 .page-footer {
   min-height: 160px;
+
   @include padding-content;
   background-color: $bg-darkgrey;
 }
