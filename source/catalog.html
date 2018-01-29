@@ -3,31 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров | Mishka - онлайн магазин ручной работы</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype.mobile.svg" width="86" height="35" alt="Mishka - онлайн магазин ручной работы">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka - онлайн магазин ручной работы">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <form method="get" action="https://echo.htmlacademy.ru">
-                <input class="site-list__search" type="search" name="search" placeholder="Поиск по сайту">
-              </form>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__login" href="#">Корзина: пока пуста</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--login" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -40,111 +39,48 @@
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <div class="catalog__info">
-              <h3 class="catalog__title"><a class="catalog__link" href="#">Зайчик-попрыгайчик</a></h3>
-              <span class="catalog__options">Рост 30 см, вес 200 г</span>
-            </div>
             <div class="catalog__image">
-              <a class="catalog__link" href="#"><img src="img/goods-1.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+              <a class="catalog__link" href="#"><img src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
             </div>
-            <div class="catalog__order">
-              <span class="catalog__price">1 200 руб.</span>
-              <button class="catalog__add button" type="button">Заказать</button>
-            </div>
-            <div class="catalog__cart cart">
-              <b class="cart__title">Добавить в корзину</b>
-              <form method="post" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                  <legend class="cart__description">Выберите размер:</legend>
-                  <ul class="cart__list">
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-bunny" id="s-bunny" value="S" checked>
-                      <label class="cart__checkbox" for="s-bunny">S</label>
-                    </li>
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-bunny" id="m-bunny" value="M">
-                      <label class="cart__checkbox" for="m-bunny">M</label>
-                    </li>
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-bunny" id="l-bunny" value="L">
-                      <label class="cart__checkbox" for="l-bunny">L</label>
-                    </li>
-                  </ul>
-                  <button class="cart__add button" type="button">Добавить</button>
-                </fieldset>
-              </form>
+            <div class="catalog__content">
+              <div class="catalog__info">
+                <h3 class="catalog__title"><a class="catalog__link" href="#">Зайчик-попрыгайчик</a></h3>
+                <span class="catalog__options">Рост 30 см, вес 200 г</span>
+              </div>
+              <div class="catalog__order">
+                <span class="catalog__price">1 200 руб.</span>
+                <button class="catalog__add" type="button">Заказать</button>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <div class="catalog__info">
-              <h3 class="catalog__title"><a class="catalog__link" href="#">Корзинка для белья</a></h3>
-              <span class="catalog__options">Диаметр 15 см, высота 10 см</span>
-            </div>
             <div class="catalog__image">
-              <a class="catalog__link" href="#"><img src="img/goods-2.jpg" width="260" height="195" alt="Корзинка для белья"></a>
+              <a class="catalog__link" href="#"><img src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья"></a>
             </div>
-            <div class="catalog__order">
-              <span class="catalog__price">690 руб.</span>
-              <button class="catalog__add button" type="button">Заказать</button>
-            </div>
-            <div class="catalog__cart cart">
-              <b class="cart__title">Добавить в корзину</b>
-              <form method="post" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                  <legend class="cart__description">Выберите размер:</legend>
-                  <ul class="cart__list">
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-basket" id="s-basket" value="S" checked>
-                      <label class="cart__checkbox" for="s-basket">S</label>
-                    </li>
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-basket" id="m-basket" value="M">
-                      <label class="cart__checkbox" for="m-basket">M</label>
-                    </li>
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-basket" id="l-basket" value="L">
-                      <label class="cart__checkbox" for="l-basket">L</label>
-                    </li>
-                  </ul>
-                  <button class="cart__add button" type="button">Добавить</button>
-                </fieldset>
-              </form>
+            <div class="catalog__content">
+              <div class="catalog__info">
+                <h3 class="catalog__title"><a class="catalog__link" href="#">Корзинка для белья</a></h3>
+                <span class="catalog__options">Диаметр 15 см, высота 10 см</span>
+              </div>
+              <div class="catalog__order">
+                <span class="catalog__price">690 руб.</span>
+                <button class="catalog__add" type="button">Заказать</button>
+              </div>
             </div>
           </li>
           <li class="catalog__item">
-            <div class="catalog__info">
-              <h3 class="catalog__title"><a class="catalog__link" href="#">Большая корзинка для игрушек</a></h3>
-              <span class="catalog__options">Диаметр 30 см, высота 30 см</span>
-            </div>
             <div class="catalog__image">
-              <a class="catalog__link" href="#"><img src="img/goods-3.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
+              <a class="catalog__link" href="#"><img src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек"></a>
             </div>
-            <div class="catalog__order">
-              <span class="catalog__price">1 500 руб.</span>
-              <button class="catalog__add button" type="button">Заказать</button>
-            </div>
-            <div class="catalog__cart cart">
-              <b class="cart__title">Добавить в корзину</b>
-              <form method="post" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                  <legend class="cart__description">Выберите размер:</legend>
-                  <ul class="cart__list">
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-bigbasket" id="s-bigbasket" value="S" checked>
-                      <label class="cart__checkbox" for="s-bigbasket">S</label>
-                    </li>
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-bigbasket" id="m-bigbasket" value="M">
-                      <label class="cart__checkbox" for="m-bigbasket">M</label>
-                    </li>
-                    <li class="cart__item">
-                      <input class="visually-hidden" type="radio" name="size-bigbasket" id="l-bigbasket" value="L">
-                      <label class="cart__checkbox" for="l-bigbasket">L</label>
-                    </li>
-                  </ul>
-                  <button class="cart__add button" type="button">Добавить</button>
-                </fieldset>
-              </form>
+            <div class="catalog__content">
+              <div class="catalog__info">
+                <h3 class="catalog__title"><a class="catalog__link" href="#">Большая корзинка для игрушек</a></h3>
+                <span class="catalog__options">Диаметр 30 см, высота 30 см</span>
+              </div>
+              <div class="catalog__order">
+                <span class="catalog__price">1 500 руб.</span>
+                <button class="catalog__add" type="button">Заказать</button>
+              </div>
             </div>
           </li>
         </ul>
@@ -152,9 +88,13 @@
 
       <section class="making">
         <h2 class="making__title">Процесс производства</h2>
-        <img src="img/making.jpg" width="260" height="150" alt="Процесс производства">
-        <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="making__order button" href="form.html">Сделать заказ</a>
+        <video width="260" height="150" poster="img/video-mobile@1x.jpg">
+          Тег video не поддерживается вашим браузером.
+        </video>
+        <div class="making__info">
+          <p class="making__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="making__order button" href="form.html">Сделать заказ</a>
+        </div>
       </section>
     </main>
 
@@ -177,5 +117,27 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <p class="modal__description">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="s" value="S" checked>
+            <label class="modal__label" for="s">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="m" value="M">
+            <label class="modal__label" for="m">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="l" value="L">
+            <label class="modal__label" for="l">L</label>
+          </li>
+        </ul>
+        <button class="modal__add button" type="button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>

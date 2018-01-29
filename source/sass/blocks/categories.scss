@@ -1,0 +1,31 @@
+.categories__list {
+  @include list-reset;
+}
+
+.categories__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.categories__link {
+  width: 100%;
+  min-height: 103px;
+  padding-left: 30px;
+  padding-right: 160px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.categories__link--interior {
+  background-color: rgb(99, 209, 187);
+}
+
+.categories__link--kids {
+  background-color: rgb(86, 195, 178);
+}
