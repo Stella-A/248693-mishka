@@ -1,0 +1,89 @@
+.order-form {
+  @include padding-content;
+  padding-bottom: 55px;
+}
+
+.order-form__description {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+
+.order-form__group {
+  padding: 0;
+  padding-top: 25px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-top: 1px solid rgb(98, 209, 186);
+}
+
+.order-form__title {
+  margin-left: -3px;
+  padding-right: 25px;
+  line-height: 16px;
+  color: rgb(99, 209, 187);
+  text-transform: uppercase;
+}
+
+.order-form__list {
+  @include list-reset;
+}
+
+.order-form__item {
+  line-height: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.order-form__item--option {
+  padding-left: 62px;
+  padding-bottom: 45px;
+}
+
+.order-form__input--tel + label,
+.order-form__input--email + label {
+  position: absolute;
+  right: 0;
+}
+
+.order-form__input,
+.order-form__textarea {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+
+.order-form__input {
+  margin-bottom: 23px;
+  border: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.order-form__textarea {
+  height: 138px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid rgb(68, 68, 68);
+  resize: none;
+}
+
+.order-form__note {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgb(68, 68, 68);
+}
+
+.order-form__send {
+  width: 100%;
+  margin-top: 30px;
+}

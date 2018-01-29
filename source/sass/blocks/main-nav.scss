@@ -1,0 +1,24 @@
+.main-nav {
+  position: relative;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.main-nav__toggle {
+  position: absolute;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__item {
+  padding: 30px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.main-nav__link {
+  padding-left: 45px;
+}

@@ -1,0 +1,24 @@
+.about {
+  @include padding-content;
+  padding-top: 30px;
+  padding-bottom: 55px;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.about__title {
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about__list {
+  @include list-reset;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.about__item {
+  padding-top: 60px;
+}

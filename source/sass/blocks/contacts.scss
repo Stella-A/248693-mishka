@@ -1,0 +1,47 @@
+.contacts {
+  @include padding-content;
+  padding-bottom: 38px;
+}
+
+.contacts__title {
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  @include list-reset;
+}
+
+.contacts__item {
+  margin-bottom: 35px;
+  line-height: 30px;
+  color: rgb(68, 68, 68);
+}
+
+.contacts__field {
+  width: 75px;
+}
+
+.contacts__value {
+  width: 180px;
+}
+
+.contacts__value--mail {
+  border-bottom: 1px solid rgb(98, 209, 186);
+}
+
+.contacts__interactive {
+  width: 100vw;
+  height: 457px;
+  margin-left: -30px;
+  margin-bottom: 35px;
+}
+
+.contacts__write {
+  width: 100%;
+}
