@@ -171,10 +171,6 @@
     line-height: 23px;
   }
 
-  .order-form__input {
-    padding-top: 0;
-  }
-
   .order-form__list {
     display: flex;
     flex-wrap: wrap;
@@ -196,6 +192,7 @@
 
   .order-form__input {
     min-width: 334px;
+    padding-top: 0;
     padding-left: 15px;
     padding-right: 15px;
   }
