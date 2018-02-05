@@ -1,6 +1,36 @@
 .page-footer {
-  min-height: 160px;
-
-  @include padding-content;
   background-color: $bg-darkgrey;
+}
+
+.page-footer__wrapper {
+  width: 320px;
+  min-height: 160px;
+  margin: 0 auto;
+
+  @include padding-content-mobile;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $tablet-width;
+
+    @include padding-content;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    width: $desktop-width;
+  }
 }

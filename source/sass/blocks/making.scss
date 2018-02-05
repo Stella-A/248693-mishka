@@ -1,6 +1,5 @@
 .making {
-  margin-left: 30px;
-  margin-right: 30px;
+  @include padding-content-mobile;
   margin-bottom: 55px;
 }
 
@@ -19,8 +18,7 @@
 }
 
 .making__info {
-  @include padding-content;
-  margin-top: -6px;
+  @include padding-content-mobile;
   border: 1px solid rgb(237, 237, 237);
   border-top: none;
 }
@@ -39,4 +37,62 @@
 .making__order {
   width: 100%;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .making {
+    display: flex;
+    flex-direction: column;
+
+    @include padding-content;
+  }
+
+  .making__video {
+    order: -1;
+  }
+
+  .making__info {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .making__title {
+    font-size: 20px;
+  }
+
+  .making__description {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .making {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    height: 454px;
+  }
+
+  .making__title {
+    flex-shrink: 0;
+    width: 368px;
+    padding-left: 80px;
+  }
+
+  .making__video {
+    align-self: flex-start;
+    width: 682px;
+    margin-top: auto;
+  }
+
+  .making__info {
+    flex-shrink: 0;
+    width: 368px;
+    margin-left: -368px;
+    padding-top: 160px;
+    padding-left: 80px;
+    padding-right: 55px;
+  }
 }

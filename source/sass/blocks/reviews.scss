@@ -1,5 +1,8 @@
 .reviews {
-  @include padding-content;
+  width: 320px;
+  margin: 0 auto;
+
+  @include padding-content-mobile;
   padding-bottom: 40px;
 }
 
@@ -27,7 +30,7 @@
 .reviews__name {
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: bold;
   font-style: normal;
 }
@@ -60,4 +63,60 @@
 
 .reviews__write {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    position: relative;
+    width: $tablet-width;
+
+    @include padding-content;
+    padding-top: 85px;
+    padding-bottom: 50px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .reviews__name {
+    font-size: 18px;
+  }
+
+  .reviews__controls {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    margin-bottom: 0;
+  }
+
+  .reviews__arrow {
+    border: none;
+  }
+
+  .reviews__write {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 175px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: $desktop-width;
+  }
+
+  .reviews__wrapper {
+    padding-left: 175px;
+    padding-right: 100px;
+  }
 }

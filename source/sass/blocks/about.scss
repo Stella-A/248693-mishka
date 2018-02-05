@@ -1,5 +1,8 @@
 .about {
-  @include padding-content;
+  width: 320px;
+  margin: 0 auto;
+
+  @include padding-content-mobile;
   padding-top: 30px;
   padding-bottom: 55px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -21,4 +24,46 @@
 
 .about__item {
   padding-top: 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    width: $tablet-width;
+
+    @include padding-content;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 425px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .about__item {
+    width: 334px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    width: 700px;
+  }
+
+  .about__item {
+    width: 350px;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

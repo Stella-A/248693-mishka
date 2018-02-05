@@ -12,3 +12,10 @@
 
   @include list-reset;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    min-width: 145px;
+    border-bottom: none;
+  }
+}

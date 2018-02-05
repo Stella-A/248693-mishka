@@ -1,3 +1,12 @@
+.categories {
+  background-color: $bg-lightgrey;
+}
+
+.categories__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .categories__list {
   @include list-reset;
 }
@@ -11,8 +20,8 @@
 .categories__link {
   width: 100%;
   min-height: 103px;
-  padding-left: 30px;
-  padding-right: 160px;
+
+  @include padding-content-mobile;
   padding-top: 28px;
   padding-bottom: 28px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
@@ -28,4 +37,35 @@
 
 .categories__link--kids {
   background-color: rgb(86, 195, 178);
+}
+
+@media (min-width: $tablet-width) {
+  .categories__wrapper {
+    width: 768px;
+
+    @include padding-content;
+  }
+
+  .categories__list {
+    display: flex;
+  }
+
+  .categories__item {
+    width: 334px;
+  }
+
+  .categories__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__wrapper {
+    width: 1150px;
+  }
+
+  .categories__item {
+    width: 525px;
+  }
 }
