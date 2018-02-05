@@ -1,7 +1,7 @@
 .modal {
   width: 320px;
 
-  @include padding-content;
+  @include padding-content-mobile;
   padding-top: 35px;
   padding-bottom: 40px;
   border: 1px solid rgb(199, 199, 199);
