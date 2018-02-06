@@ -1,5 +1,6 @@
 .contacts {
-  padding-bottom: 38px;
+  padding-top: 18px;
+  padding-bottom: 40px;
 }
 
 .contacts__wrapper {
@@ -10,6 +11,7 @@
 }
 
 .contacts__title {
+  margin-bottom: 26px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -22,10 +24,11 @@
   flex-wrap: wrap;
 
   @include list-reset;
+  margin-bottom: 8px;
 }
 
 .contacts__item {
-  margin-bottom: 35px;
+  margin-bottom: 29px;
   line-height: 30px;
   color: rgb(68, 68, 68);
 }
@@ -50,16 +53,25 @@
 
 .contacts__write {
   width: 100%;
+  margin-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 40px;
+    padding-bottom: 38px;
+  }
+
   .contacts__wrapper {
     width: $tablet-width;
 
     @include padding-content;
+    padding-bottom: 20px;
   }
 
   .contacts__title {
+    margin-bottom: 48px;
+    margin-left: -5px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -80,20 +92,22 @@
 
   .contacts__value--mail {
     width: 204px;
-    margin-right: 50px;
+    margin-right: 55px;
   }
 
   .contacts__write {
     display: block;
     width: 230px;
     margin: 0 auto;
+    margin-top: 56px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     position: relative;
-    height: 625px;
+    padding-top: 121px;
+    padding-bottom: 86px;
   }
 
   .contacts__wrapper {
@@ -121,14 +135,15 @@
 
   .contacts__map {
     position: absolute;
+    top: 95px;
     left: 50%;
-    top: 0;
     width: 525px;
   }
 
   .contacts__write {
     display: inline-block;
     vertical-align: middle;
+    margin-top: 24px;
     margin-left: 175px;
   }
 }

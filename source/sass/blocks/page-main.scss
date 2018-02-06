@@ -16,6 +16,7 @@
 .page-main__title {
   height: 176px;
   margin: 0;
+  padding-top: 69px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 27px;
   line-height: 30px;
@@ -27,7 +28,7 @@
 
 .page-main__title--home {
   height: 280px;
-  padding-top: 75px;
+  padding-top: 70px;
   background-color: $bg-lightgrey;
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -43,14 +44,14 @@
 
   .page-main__title {
     height: 225px;
-    padding-top: 100px;
+    padding-top: 93px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .page-main__title--home {
-    height: 625px;
-    padding-top: 160px;
+    height: 627px;
+    padding-top: 153px;
     padding-left: 85px;
     padding-right: 85px;
   }
@@ -68,8 +69,8 @@
   }
 
   .page-main__title--home {
-    height: 625px;
-    padding-top: 160px;
+    height: 627px;
+    padding-top: 154px;
     padding-left: 175px;
     padding-right: 175px;
   }
