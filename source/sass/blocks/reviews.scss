@@ -3,12 +3,12 @@
   margin: 0 auto;
 
   @include padding-content-mobile;
-  padding-bottom: 40px;
+  padding-bottom: 54px;
 }
 
 .reviews__title {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 9px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
@@ -20,6 +20,7 @@
 }
 
 .reviews__text {
+  margin-bottom: 12px;
   padding-bottom: 15px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
@@ -40,18 +41,19 @@
   line-height: 30px;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1px;
   color: rgb(68, 68, 68);
 }
 
 .reviews__controls {
   display: flex;
   margin-top: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 }
 
 .reviews__arrow {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   text-align: center;
   border: 1px solid rgb(236, 236, 236);
   background-color: $bg-white;
@@ -69,20 +71,24 @@
   .reviews {
     position: relative;
     width: $tablet-width;
+    margin-bottom: 70px;
 
     @include padding-content;
-    padding-top: 85px;
-    padding-bottom: 50px;
+    padding-top: 76px;
+    padding-bottom: 47px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
   }
 
   .reviews__title {
+    margin-left: -4px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .reviews__text {
+    margin-top: 40px;
+    margin-bottom: 45px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -93,7 +99,7 @@
 
   .reviews__controls {
     position: absolute;
-    bottom: 50px;
+    bottom: 54px;
     right: 50px;
     margin-bottom: 0;
   }
@@ -113,10 +119,24 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: $desktop-width;
+    margin-bottom: 65px;
+    padding-bottom: 97px;
+    background-position-x: 50px;
   }
 
   .reviews__wrapper {
     padding-left: 175px;
     padding-right: 100px;
+  }
+
+  .reviews__title {
+    margin-top: -6px;
+    padding-right: 100px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .reviews__text {
+    margin-bottom: 25px;
   }
 }

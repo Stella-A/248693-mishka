@@ -3,12 +3,13 @@
   margin: 0 auto;
 
   @include padding-content-mobile;
-  padding-top: 30px;
-  padding-bottom: 35px;
+  padding-top: 27px;
+  padding-bottom: 45px;
 }
 
 .popular__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 4px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 25px;
   line-height: 30px;
@@ -26,8 +27,8 @@
 
 .popular__description {
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   color: rgb(68, 68, 68);
 }
 
@@ -39,8 +40,8 @@
 }
 
 .popular__item {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 
@@ -53,7 +54,7 @@
 }
 
 .popular__image {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .popular__price {
@@ -70,7 +71,7 @@
 
 .popular__order {
   width: 100%;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
@@ -80,6 +81,8 @@
     width: $tablet-width;
 
     @include padding-content;
+    padding-top: 46px;
+    padding-bottom: 71px;
   }
 
   .popular__header {
@@ -90,6 +93,7 @@
   }
 
   .popular__title {
+    margin-left: -3px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -102,6 +106,8 @@
 
   .popular__description {
     width: 292px;
+    padding-top: 45px;
+    padding-bottom: 39px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -110,12 +116,23 @@
     width: 292px;
   }
 
+  .popular__field {
+    width: 79px;
+  }
+
   .popular__image {
     width: 333px;
     height: 404px;
-    margin-top: -270px;
+    margin-top: -265px;
     margin-left: 334px;
     margin-bottom: 0;
+  }
+
+  .popular__footer {
+    display: flex;
+    flex-direction: column;
+    width: 292px;
+    margin-top: -111px;
   }
 
   .popular__price {
@@ -126,12 +143,15 @@
 
   .popular__order {
     width: 292px;
+    margin-top: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .popular {
     width: $desktop-width;
+    padding-top: 125px;
+    padding-bottom: 98px;
   }
 
   .popular__header {
@@ -140,6 +160,7 @@
 
   .popular__title {
     order: 1;
+    padding-left: 2px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -155,14 +176,20 @@
   }
 
   .popular__list {
+    margin-top: 8px;
     margin-left: 175px;
+  }
+
+  .popular__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .popular__image {
     z-index: -1;
     width: 525px;
     height: 636px;
-    margin-top: -400px;
+    margin-top: -446px;
     margin-left: 525px;
   }
 

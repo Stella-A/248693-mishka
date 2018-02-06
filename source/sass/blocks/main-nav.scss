@@ -12,6 +12,10 @@
   position: absolute;
 }
 
+.main-nav__wrapper {
+  display: none;
+}
+
 .main-nav__list {
   @include list-reset;
 }

@@ -1,6 +1,5 @@
 .making {
-  @include padding-content-mobile;
-  margin-bottom: 55px;
+  margin-bottom: 58px;
 }
 
 .making__title {
@@ -25,8 +24,10 @@
 
 .making__description {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 25px;
+  padding-left: 4px;
+  padding-right: 5px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -36,19 +37,20 @@
 
 .making__order {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: $tablet-width) {
   .making {
     display: flex;
     flex-direction: column;
-
-    @include padding-content;
+    margin-bottom: 63px;
   }
 
   .making__video {
     order: -1;
+    width: 100%;
+    height: 454px;
   }
 
   .making__info {
@@ -57,12 +59,22 @@
   }
 
   .making__title {
+    padding-top: 37px;
+    padding-bottom: 13px;
+    padding-left: 105px;
     font-size: 20px;
   }
 
   .making__description {
+    padding-left: 0;
+    padding-right: 0;
     font-size: 15px;
     line-height: 30px;
+  }
+
+  .making__order {
+    margin-bottom: 46px;
+    margin-top: 11px;
   }
 }
 
@@ -72,13 +84,17 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
-    height: 454px;
+    min-height: 454px;
+    margin-bottom: 106px;
   }
 
   .making__title {
     flex-shrink: 0;
     width: 368px;
+    margin-left: -1px;
+    padding-top: 94px;
     padding-left: 80px;
+    padding-right: 55px;
   }
 
   .making__video {
@@ -90,9 +106,14 @@
   .making__info {
     flex-shrink: 0;
     width: 368px;
+    margin-top: 160px;
     margin-left: -368px;
-    padding-top: 160px;
     padding-left: 80px;
     padding-right: 55px;
+  }
+
+  .making__description {
+    padding-top: 17px;
+    padding-bottom: 36px;
   }
 }
