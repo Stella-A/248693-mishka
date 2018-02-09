@@ -61,7 +61,6 @@
 .main-nav__link--search,
 .main-nav__link--cart {
   padding-left: 0;
-  
   &:hover,
   &:focus {
     fill: rgb(99, 209, 187);
@@ -92,12 +91,10 @@
   .main-nav--closed .main-nav__item {
     display: none;
   }
-  
   .main-nav--opened .main-nav__item,
   .main-nav--nojs .main-nav__item {
     display: block;
   }
-  
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -177,7 +174,6 @@
     padding-left: 31px;
     padding-right: 0px;
   }
-  
   .main-nav__link--search svg {
     margin-right: 0;
   }
@@ -214,7 +210,6 @@
       margin-left: auto;
     }
   }
-  
   .main-nav__list .main-nav__item {
     padding-top: 10px;
   }
