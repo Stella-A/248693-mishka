@@ -23,8 +23,44 @@
 }
 
 .about__item {
-  padding-top: 60px;
+  position: relative;
   margin-bottom: 23px;
+  padding-top: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 37px;
+    top: 6px;
+    left: -6px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--flower::before {
+    background-image: url("../../img/icon-feature-flower.svg");
+  }
+
+  &--money::before {
+    background-image: url("../../img/icon-feature-money.svg");
+  }
+
+  &--heart::before {
+    background-image: url("../../img/icon-feature-heart.svg");
+  }
+
+  &--clew::before {
+    background-image: url("../../img/icon-feature-ball.svg");
+  }
+
+  &--rocket::before {
+    background-image: url("../../img/icon-feature-rocket.svg");
+  }
+
+  &--gift::before {
+    background-image: url("../../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {

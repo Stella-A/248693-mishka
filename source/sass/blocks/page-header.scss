@@ -3,16 +3,28 @@
 }
 
 .page-header__wrapper {
+  z-index: 1;
   width: 320px;
   margin: 0 auto;
+  border-bottom: 1px solid rgb(236, 236, 236);
 }
 
 .page-header__logo {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 80px;
-  border-bottom: 1px solid rgb(236, 236, 236);
+  display: block;
+  width: 86px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 22px;
+  margin-bottom: 22px;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__info {
@@ -39,10 +51,6 @@
     z-index: 1;
   }
 
-  .page-header__nav {
-    flex-shrink: 0;
-  }
-
   .page-header__info {
     position: absolute;
     right: 50px;
@@ -50,7 +58,6 @@
     width: auto;
     height: auto;
     font-size: 15px;
-    line-height: 24px;
     color: rgb(68, 68, 68);
   }
 }
@@ -62,7 +69,10 @@
   }
 
   .page-header__logo {
+    width: 148px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 9px;
   }
 }

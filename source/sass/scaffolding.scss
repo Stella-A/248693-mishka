@@ -44,7 +44,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -76,4 +76,14 @@ input[type="radio"].visually-hidden {
   background-color: $bg-white;
   border: 2px solid rgb(68, 68, 68);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 68, 68);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

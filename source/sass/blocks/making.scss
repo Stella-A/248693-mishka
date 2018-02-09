@@ -1,19 +1,66 @@
 .making {
   margin-bottom: 58px;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .making__title {
+  position: relative;
   margin: 0;
-  padding-left: 90px;
-  padding-right: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-left: 90px;
+  padding-right: 30px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 17px;
-  line-height: 24px;
   font-weight: bold;
   border: 1px solid rgb(237, 237, 237);
   border-bottom: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 33px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../../img/icon-video.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.making__video {
+  position: relative;
+}
+
+.making__play {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../img/icon-play.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:hover,
+  &:focus {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .making__info {
@@ -28,10 +75,7 @@
   padding-bottom: 25px;
   padding-left: 4px;
   padding-right: 5px;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
   color: rgb(68, 68, 68);
 }
 
@@ -53,6 +97,10 @@
     height: 454px;
   }
 
+  .making__play {
+    top: 50%;
+  }
+
   .making__info {
     padding-left: 40px;
     padding-right: 40px;
@@ -63,6 +111,11 @@
     padding-bottom: 13px;
     padding-left: 105px;
     font-size: 20px;
+
+    &::before {
+      top: 33px;
+      left: 41px;
+    }
   }
 
   .making__description {
@@ -91,16 +144,21 @@
   .making__title {
     flex-shrink: 0;
     width: 368px;
+    height: 160px;
     margin-left: -1px;
     padding-top: 94px;
     padding-left: 80px;
     padding-right: 55px;
+
+    &::before {
+      top: 42px;
+      left: 80px;
+    }
   }
 
   .making__video {
     align-self: flex-start;
     width: 682px;
-    margin-top: auto;
   }
 
   .making__info {

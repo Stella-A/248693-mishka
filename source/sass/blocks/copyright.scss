@@ -1,10 +1,33 @@
 .copyright {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
   min-height: 80px;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 185px;
+  margin: 0 auto;
+  fill: rgb(99, 209, 187);
+
+  &[href]:hover,
+  &[href]:focus {
+    fill: rgb(70, 193, 174);
+  }
+
+  &[href]:active {
+    fill: rgb(70, 193, 174);
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {

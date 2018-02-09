@@ -4,7 +4,7 @@
 
 .page-footer__wrapper {
   width: 320px;
-  min-height: 160px;
+  height: 160px;
   margin: 0 auto;
 
   @include padding-content-mobile;
@@ -14,14 +14,29 @@
   display: none;
 }
 
+.page-footer__link {
+  &[href]:hover,
+  &[href]:focus {
+    fill: rgb(70, 193, 174);
+  }
+
+  &[href]:active {
+    fill: rgb(70, 193, 174);
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: $tablet-width;
+    height: 144px;
 
     @include padding-content;
+    padding-top: 53px;
+    padding-bottom: 46px;
   }
 
   .page-footer__logo {
