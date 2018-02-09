@@ -20,18 +20,16 @@
 .categories__link {
   position: relative;
   width: 100%;
-
   padding-top: 28px;
   padding-bottom: 28px;
   padding-left: 30px;
   padding-right: 100px;
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 19px;
-  line-height: 24px;
   font-weight: bold;
   color: rgb(255, 255, 255);
 
-  &:active {
+  &[href]:active {
     color: rgba(255, 255, 255, 0.3);
   }
 
@@ -47,38 +45,38 @@
     opacity: 0.5;
   }
 
-  &:hover::after,
-  &:focus:after {
+  &[href]:hover::after,
+  &[href]:focus::after {
     opacity: 0.7;
   }
 
-  &:active:after {
+  &[href]:active::after {
     opacity: 0.3;
   }
-}
 
-.categories__link--interior {
-  background-color: rgb(99, 209, 187);
+  &--interior {
+    background-color: rgb(99, 209, 187);
+  }
 
-  &:hover,
-  &:focus {
+  &--interior[href]:hover,
+  &--interior[href]:focus {
     background-color: rgb(89, 213, 188);
   }
 
-  &::after {
+  &--interior::after {
     background-image: url("../../img/icon-interior.svg");
   }
-}
 
-.categories__link--kids {
-  background-color: rgb(86, 195, 178);
+  &--kids {
+    background-color: rgb(86, 195, 178);
+  }
 
-  &:hover,
-  &:focus {
+  &--kids[href]:hover,
+  &--kids[href]:focus {
     background-color: rgb(70, 193, 174);
   }
 
-  &::after {
+  &--kids::after {
     background-image: url("../../img/icon-toy.svg");
   }
 }
@@ -126,8 +124,8 @@
     padding-left: 36px;
     padding-right: 105px;
 
-    &:hover,
-    &:focus {
+    &[href]:hover,
+    &[href]:focus {
       height: 130px;
       transform: translateY(-5px);
     }

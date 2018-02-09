@@ -45,12 +45,12 @@
   color: rgb(68, 68, 68);
   border-bottom: 1px solid rgb(98, 209, 186);
 
-  &:hover,
-  &:focus {
+  &[href]:hover,
+  &[href]:focus {
     color: rgb(70, 193, 174);
   }
 
-  &:active {
+  &[href]:active {
     color: rgb(70, 193, 174);
     opacity: 0.3;
   }
@@ -99,13 +99,13 @@
     @include padding-content;
     padding-top: 21px;
     padding-bottom: 20px;
-  }
 
-  .contacts__wrapper--background {
-    position: relative;
-    padding-top: 40px;
+    &--background {
+      position: relative;
+      padding-top: 40px;
+    }
 
-    &::after {
+    &--background::after {
       content: "";
       position: absolute;
       top: 0;
@@ -153,11 +153,11 @@
 
   .contacts__value {
     width: 222px;
-  }
 
-  .contacts__value--mail {
-    width: 204px;
-    margin-right: 55px;
+    &--mail {
+      width: 204px;
+      margin-right: 55px;
+    }
   }
 
   .contacts__image {
@@ -187,12 +187,12 @@
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
-  }
 
-  .contacts__wrapper--background {
-    padding-top: 120px;
+    &--background {
+      padding-top: 120px;
+    }
 
-    &::after {
+    &--background::after {
       height: 23px;
     }
   }
@@ -215,10 +215,10 @@
 
   .contacts__value {
     width: 225px;
-  }
 
-  .contacts__value--mail {
-    width: 204px;
+    &--mail {
+      width: 204px;
+    }
   }
 
   .contacts__map {

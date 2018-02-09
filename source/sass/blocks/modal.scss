@@ -18,10 +18,8 @@
 }
 
 .modal__description {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
-  font-weight: 400;
   text-align: center;
   color: rgb(68, 68, 68);
 }
@@ -47,6 +45,7 @@
   text-align: center;
   color: rgb(68, 68, 68);
   border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
 
   &:hover,
   &:focus {
