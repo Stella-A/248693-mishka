@@ -1,21 +1,38 @@
 .social {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .social__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
+  width: 140px;
   min-height: 80px;
 
   @include list-reset;
 }
 
+.social__link[href] {
+  &:hover,
+  &:focus {
+    fill: rgb(70, 193, 174);
+  }
+
+  &:active {
+    fill: rgb(70, 193, 174);
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social {
     min-width: 145px;
+    margin-left: 78px;
     border-bottom: none;
   }
 }
