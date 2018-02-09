@@ -55,7 +55,7 @@
   &[href]:active {
     opacity: 0.3;
   }
-  
+
   &--search,
   &--cart {
     padding-left: 0;
@@ -94,12 +94,12 @@
   .main-nav--closed .main-nav__item {
     display: none;
   }
-  
+
   .main-nav--opened .main-nav__item,
   .main-nav--nojs .main-nav__item {
     display: block;
   }
-  
+
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
