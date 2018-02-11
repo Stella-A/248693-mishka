@@ -5,10 +5,17 @@
     <title>Вязание на заказ | Mishka - онлайн магазин ручной работы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
@@ -31,14 +38,14 @@
             </ul>
             <ul class="main-nav__list main-nav__list--user">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--search" href="#">
-                  <svg width="17.6" height="17.6"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+                <a class="main-nav__link main-nav__link--search" href="#" title="Искать">
+                  <svg width="18.6" height="17.6"><use xlink:href="#icon-sprite-search"></use></svg>
                   Поиск по сайту
                 </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--cart" href="#">
-                  <svg width="20.294" height="18.849"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+                  <svg width="20.294" height="18.849"><use xlink:href="#icon-sprite-cart"></use></svg>
                   Корзина: пока пуста
                 </a>
               </li>
@@ -180,24 +187,24 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__link" href="index.html" title="Mishka - онлайн магазин ручной работы">
-            <svg class="page-footer__image" width="102" height="34"><use xlink:href="img/sprite.svg#logo-footer"></use></svg>
+            <svg class="page-footer__image" width="102" height="34"><use xlink:href="#logo-sprite-footer"></use></svg>
           </a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" title="Мы в Инстаграме">
-                <svg width="22" height="21"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+                <svg width="22" height="21"><use xlink:href="#icon-sprite-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" title="Мы в Фейсбуке">
-                <svg width="15" height="28"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                <svg width="15" height="28"><use xlink:href="#icon-sprite-fb"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" title="Мы в Твиттере">
-                <svg width="23" height="20"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+                <svg width="23" height="20"><use xlink:href="#icon-sprite-twitter"></use></svg>
               </a>
             </li>
           </ul>
@@ -205,13 +212,12 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
             <b class="copyright__text">Разработано</b>
-            <svg class="copyright__image" width="27" height="34"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+            <svg class="copyright__image" width="27" height="34"><use xlink:href="#logo-sprite-htmlacademy"></use></svg>
           </a>
         </div>
       </div>
     </footer>
 
-    <script src="js/svgxuse.min.js" defer></script>
     <script src="js/menu.js"></script>
   </body>
 </html>

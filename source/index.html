@@ -5,10 +5,17 @@
     <title>Mishka - онлайн магазин ручной работы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -31,14 +38,14 @@
             </ul>
             <ul class="main-nav__list main-nav__list--user">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--search" href="#">
-                  <svg width="17.6" height="17.6"><use xlink:href="img/sprite.svg#icon-search"></use></svg>
+                <a class="main-nav__link main-nav__link--search" href="#" title="Искать">
+                  <svg width="18.6" height="17.6"><use xlink:href="#icon-sprite-search"></use></svg>
                   Поиск по сайту
                 </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link main-nav__link--cart" href="#">
-                  <svg width="20.294" height="18.849"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
+                  <svg width="20.294" height="18.849"><use xlink:href="#icon-sprite-cart"></use></svg>
                   Корзина: пока пуста
                 </a>
               </li>
@@ -109,7 +116,7 @@
         </picture>
         <div class="popular__footer">
           <span class="popular__price">Цена: 990 руб.</span>
-          <a class="popular__order button" href="#">Заказать</a>
+          <a class="popular__order button js-open-cart" href="#">Заказать</a>
         </div>
       </section>
 
@@ -137,10 +144,10 @@
           </div>
           <div class="reviews__controls">
             <a class="reviews__arrow reviews__arrow--prev" href="#" title="Предыдущий отзыв">
-              <svg width="50" height="26.003"><use xlink:href="img/sprite.svg#icon-arrow-prev"></use></svg>
+              <svg width="50" height="26.003"><use xlink:href="#icon-sprite-left-arrow"></use></svg>
             </a>
             <a class="reviews__arrow reviews__arrow--next" href="#" title="Следующий отзыв">
-              <svg width="50" height="26.003"><use xlink:href="img/sprite.svg#icon-arrow-next"></use></svg>
+              <svg width="50" height="26.003"><use xlink:href="#icon-sprite-right-arrow"></use></svg>
             </a>
           </div>
           <a class="reviews__write button" href="#">Написать</a>
@@ -181,24 +188,24 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__link" title="Mishka - онлайн магазин ручной работы">
-            <svg class="page-footer__image" width="102" height="34"><use xlink:href="img/sprite.svg#logo-footer"></use></svg>
+            <svg class="page-footer__image" width="102" height="34"><use xlink:href="#logo-sprite-footer"></use></svg>
           </a>
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" title="Мы в Инстаграме">
-                <svg width="22" height="21"><use xlink:href="img/sprite.svg#icon-instagram"></use></svg>
+                <svg width="22" height="21"><use xlink:href="#icon-sprite-insta"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" title="Мы в Фейсбуке">
-                <svg width="15" height="28"><use xlink:href="img/sprite.svg#icon-facebook"></use></svg>
+                <svg width="15" height="28"><use xlink:href="#icon-sprite-fb"></use></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" title="Мы в Твиттере">
-                <svg width="23" height="20"><use xlink:href="img/sprite.svg#icon-twitter"></use></svg>
+                <svg width="23" height="20"><use xlink:href="#icon-sprite-twitter"></use></svg>
               </a>
             </li>
           </ul>
@@ -206,36 +213,38 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
             <b class="copyright__text">Разработано</b>
-            <svg class="copyright__image" width="27" height="34"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+            <svg class="copyright__image" width="27" height="34"><use xlink:href="#logo-sprite-htmlacademy"></use></svg>
           </a>
         </div>
       </div>
     </footer>
 
     <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form method="post" action="https://echo.htmlacademy.ru">
-        <p class="modal__description">Выберите размер:</p>
-        <ul class="modal__list">
-          <li class="modal__item">
-            <input class="modal__input visually-hidden" type="radio" name="size" id="s" value="S" checked>
-            <label class="modal__label" for="s">S</label>
-          </li>
-          <li class="modal__item">
-            <input class="modal__input visually-hidden" type="radio" name="size" id="m" value="M">
-            <label class="modal__label" for="m">M</label>
-          </li>
-          <li class="modal__item">
-            <input class="modal__input visually-hidden" type="radio" name="size" id="l" value="L">
-            <label class="modal__label" for="l">L</label>
-          </li>
-        </ul>
-        <button class="modal__add button" type="submit">Добавить</button>
-      </form>
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <p class="modal__description">Выберите размер:</p>
+          <ul class="modal__list">
+            <li class="modal__item">
+              <input class="modal__input visually-hidden" type="radio" name="size" id="s" value="S" checked>
+              <label class="modal__label" for="s">S</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__input visually-hidden" type="radio" name="size" id="m" value="M">
+              <label class="modal__label" for="m">M</label>
+            </li>
+            <li class="modal__item">
+              <input class="modal__input visually-hidden" type="radio" name="size" id="l" value="L">
+              <label class="modal__label" for="l">L</label>
+            </li>
+          </ul>
+          <button class="modal__add button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
 
-    <script src="js/svgxuse.min.js" defer></script>
     <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/map.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXyhb353_O5428J1Vnq9Z8y1F46IK88Qc&callback=initMap"></script>
   </body>
