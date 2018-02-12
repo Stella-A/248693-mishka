@@ -7,14 +7,19 @@
 
 .social__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   align-content: center;
-  width: 140px;
+  min-width: 140px;
   min-height: 80px;
 
   @include list-reset;
+}
+
+.social__item {
+  width: 55px;
+  text-align: center;
 }
 
 .social__link {
