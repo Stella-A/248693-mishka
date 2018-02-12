@@ -101,14 +101,15 @@
 
   .catalog__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
-    height: 334px;
+    min-height: 334px;
     margin-bottom: 54px;
   }
 
   .catalog__image {
     width: 334px;
+    height: 332px;
   }
 
   .catalog__content {
@@ -166,18 +167,24 @@
   }
 
   .catalog__content {
+    flex-grow: 1;
     width: 100%;
-    height: 199px;
+    min-height: 199px;
     border-top: 1px solid rgb(237, 237, 237);
   }
 
   .catalog__info {
+    flex-grow: 1;
     margin-left: -2px;
   }
 
   .catalog__title {
     padding-top: 27px;
     padding-right: 20px;
+  }
+
+  .catalog__options {
+    padding-bottom: 10px;
   }
 
   .catalog__order {

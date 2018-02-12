@@ -81,9 +81,9 @@
 
   .about__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 470px;
+    min-height: 470px;
     font-size: 20px;
     line-height: 22px;
   }
@@ -91,6 +91,22 @@
   .about__item {
     width: 334px;
     margin-bottom: 51px;
+
+    &--flower {
+      order: -5;
+    }
+
+    &--money {
+      order: -3;
+    }
+
+    &--clew {
+      order: -5;
+    }
+
+    &--rocket {
+      order: -1;
+    }
   }
 }
 
