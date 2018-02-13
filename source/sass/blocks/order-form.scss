@@ -225,13 +225,13 @@
   }
 
   &:active::after {
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
   }
 }
 
 .order-form__input--checkbox:checked + label {
   &::after {
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
   }
 
   &:active::after {
@@ -242,7 +242,7 @@
 .order-form__input--tel:hover ~ .order-form__label--tel,
 .order-form__input--tel:focus ~ .order-form__label--tel {
   &::after {
-    background-image: url("../../img/icon-phone-green.svg");
+    background-image: url("../img/icon-phone-green.svg");
     opacity: 1;
   }
 }
@@ -250,7 +250,7 @@
 .order-form__input--email:hover ~ .order-form__label--email,
 .order-form__input--email:focus ~ .order-form__label--email {
   &::after {
-    background-image: url("../../img/icon-mail-green.svg");
+    background-image: url("../img/icon-mail-green.svg");
     opacity: 1;
   }
 }
@@ -271,11 +271,11 @@
   }
 
   &--tel::after {
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
   }
 
   &--email::after {
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
   }
 }
 
